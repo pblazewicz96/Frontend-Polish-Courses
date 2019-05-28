@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: 40px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-family: arial;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            transition: 1s;
+            border: 0 solid black;
+        }
+
+        /* .larger:hover~h1 {
+            font-size: 160px;
+        } */
+
+        h1.duzy {
+            font-size: 160px;
+        }
+
+        /* .smaller:hover~h1 {
+            font-size: 40px;
+        } */
+
+        h1.smaller {
+            font-size: 40px;
+        }
+
+        .border:hover~h1 {
+            border: 20px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button class="larger">2xWiększy</button>
+    <button class="smaller">2xMniejszy</button>
+    <button class="border">Obramowanie</button>
+    <h1>Nazwa</h1>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- <script src="script.js"></script> -->
+    <script>
+        $('.larger').click(function () {
+            $('h1').toggleClass("duzy");
+        })
+
+        $('.smaller').click(function () {
+            $('h1').toggleClass("smaller");
+        })
+    </script>
+
+</body>
+
+</html>

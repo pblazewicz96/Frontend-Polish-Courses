@@ -1,0 +1,46 @@
+Pseudoklasy - nie są związane z żadnym konkretnym znacznikiem (dotyczą każdego), ich dodanie do elementu następuje automatycznie po wystąpieniu OKREŚLONEGO ZDARZENIA (STANU) lub jest ZIĄZANE Z MIEJSCEM W STRUKTURZE.
+
+:hover (zdarzenie najechania, stan po najechaniu)
+:focus (zdarzenie aktywnego elementu, stan elementu jest aktywny) - gdy został kliknięty i można w nim pisać
+:first-child (miejsce w strukturze) /:last-child - pierwsze lub ostatnie dziecko w strukturze
+
+:active - odnośnik aktualnie jest klikany
+:visited - odnośnik był kliknięty wczesniej
+
+transition - znajduje sie w elemencie ktory bedzie zmieniany
+
+
+a:link{}  - nie pisze się zazwyczaj bo juz zawiera hiperlacze 
+          - ten element z kiperłączem zacznie się zmianiać!!!
+
+Pseudoelementy - dodatkowy element (before, after) ew wybranie jakiegos elementu z wiekszego zbioru. Ale wybranjie go w css a nie w html.
+
+::first-letter
+::first-line - pierwsza linia w przegladarce
+::selection - wybrane zaznaczone elementy
+
+li:nth-child(3){ - enty element
+    color: red;
+}
+
+:nth-child(n)
+
+:nth-last-child(n) - od ostatnie elementu
+
+VVV
+
+4
+2n
+3n-2
+even - parzyste
+odd - nieparzyste
+
+:nth-of-type(n) - bierze pod uwagę wszystkie znaczniki równorzędne, nth-of-type tylko tego samego typu znaczniki. element który jest ntym elementem
+
+
+
+
+
+
+
+

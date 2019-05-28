@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BoxModel i BoxSizing</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 400px;
+            /* height: 400px; */
+            padding: 100px;
+            border: 40px solid red;
+            float: left;
+
+        }
+
+        .item1 {
+            background-color: cadetblue;
+
+        }
+
+        .item2 {
+            background-color: royalblue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item1">Lorem, ipsum dolor sit amet consectetur adipisicing eli quae obcaecati eum unde, architecto ipsa sunt.</div>
+    <div class="item2"></div>
+
+</body>
+
+</html>

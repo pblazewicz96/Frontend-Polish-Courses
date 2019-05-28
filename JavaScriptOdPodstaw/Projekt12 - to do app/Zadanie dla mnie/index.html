@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Projekt - dodawanie zadań - z użyciem tablicy</title>
+  <style>
+    * {
+      margin: 0;
+
+    }
+
+    body {
+      display: flex;
+    }
+
+    body>* {
+      flex-basis: 50%;
+      min-height: 100vh;
+      color: #fff;
+      font-size: 2rem;
+      font-family: arial;
+      text-align: center;
+    }
+
+    .add {
+      background-color: deepskyblue;
+    }
+
+    .search {
+      background-color: crimson;
+    }
+
+    input,
+    button {
+      margin: 20px 0;
+      padding: 10px 20px;
+      color: #fff;
+      background-color: rgb(177, 210, 30);
+      border: none;
+      font-size: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 3px 3px 5px 1px black;
+      transition: .3s;
+      cursor: text;
+    }
+
+    button {
+      cursor: pointer;
+
+    }
+
+    input:hover,
+    input:focus,
+    button:hover {
+      background-color: rgb(67, 165, 42);
+    }
+
+    ul.add,
+    ul.search {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
+
+    ul.add li {
+      display: flex;
+      margin-top: 20px;
+    }
+
+
+    ul.add li button {
+      margin: 0;
+      margin-left: 20px;
+      font-size: .8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="add">
+    <form action="">
+      <input class="addInput" type="text">
+      <button>Add Task</button>
+    </form>
+    <ul class="add"></ul>
+  </div>
+  <div class="search">
+    <input class="searchInput" type="text">
+    <ul class="search"></ul>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: radial-gradient(rgb(0, 0, 0) 4%, rgb(255, 0, 0) 4%, rgb(255, 0, 0) 10%, rgb(0, 255, 0) 10%, rgb(0, 255, 0) 18%, white 18%);
+            overflow: hidden;
+        }
+
+        div {
+            position: absolute;
+            width: 4vw;
+            height: 4vw;
+            background-color: gray;
+            animation: move 5s infinite linear alternate, chaos 1.5s infinite ease alternate;
+            /* animation-name: move;
+            animation-duration: 3s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: linear; */
+            /* animation-direction: alternate; */
+        }
+
+        button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+
+        button:hover+div {
+            /* animation:paused; */
+            animation-play-state: paused;
+
+        }
+
+        @keyframes move {
+            0% {
+                top: 20%;
+                left: 20%;
+            }
+
+            15% {
+                top: 34%;
+                left: 90%;
+            }
+
+            30% {
+                top: 44%;
+                left: 10%;
+            }
+
+            40% {
+                top: 54%;
+                left: 80%;
+            }
+
+            55% {
+                top: 64%;
+                left: 12%;
+            }
+
+            70% {
+                top: 54%;
+                left: 72%;
+            }
+
+            90% {
+                top: 84%;
+                left: 8%;
+            }
+
+            100% {
+                top: 80%;
+                left: 80%;
+            }
+        }
+
+        @keyframes chaos {
+            0% {
+                transform: translate(10vh, -10vh)
+            }
+
+            10% {
+                transform: translate(-6vh, 5vh)
+            }
+
+            20% {
+                transform: translate(3vh, 10vh)
+            }
+
+            40% {
+                transform: translate(7vh, -6vh)
+            }
+
+            60% {
+                transform: translate(-20vh, 15vh)
+            }
+
+            80% {
+                transform: translate(30vh, 5vh)
+            }
+
+            100% {
+                transform: translate(5vh, -5vh)
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>SHOT!</button>
+    <div></div>
+
+</body>
+
+</html>

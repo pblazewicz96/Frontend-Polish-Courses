@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Examples 6 - Właściwości elementów eleastycznych</title>
+ <style>
+  section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* width: 600px; */
+   height: 400px;
+   margin: 100px auto;
+   font-size: 80px;
+   font-family: sans-serif;
+   color: white;
+   background-color: #ddd;
+   border: 3px solid red;
+  }
+
+  div {
+   /* flex-basis: 400px; */
+   /* 600px - potrzebują 3 a mają 300 */
+   flex-shrink: 1;
+  }
+
+  .f1 {
+   flex-basis: 200px;
+   /* width: 1500px; */
+   order: 3;
+   /* Gdy order jest taki sam decyduje kolejność z html */
+   /* flex-grow: 1; */
+   /* Elementy z flex-grow: 0 nie rozszerzają sie na wolną przestrzeń */
+   /* flex-shrink: 2; */
+   /* Elementy zmniejszą się tak by nie wykraczać poza wielkość kontenera */
+   /* flex-basis: auto; */
+   /* auto - tyle ile zostało wskazane we własciwości width/height lub jeśli nie zostało to tyle ile ma wysokości/szerokości dany element */
+   align-self: stretch;
+   /* auto - to samo co align-items */
+   background-color: darkcyan;
+   text-align: center;
+   /* flex-basis wielkość (od flex-direction zależy czy to szerokość czy wysokość) */
+  }
+
+  .f2 {
+   order: 3;
+   background-color: darkred;
+   /* flex-shrink: 3; */
+   /* flex-grow: 0; */
+  }
+
+  .f3 {
+   order: 3;
+   background-color: darkolivegreen;
+   /* flex-grow: 2; */
+  }
+ </style>
+</head>
+
+<body>
+ <section>
+  <div class="f1">1</div>
+  <div class="f2">2</div>
+  <div class="f3">3</div>
+ </section>
+</body>
+
+</html>

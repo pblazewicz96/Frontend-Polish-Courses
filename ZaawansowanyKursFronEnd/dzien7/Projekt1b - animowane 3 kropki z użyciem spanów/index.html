@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+ <style>
+  p {
+   position: absolute;
+   font-size: 80px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   overflow: hidden;
+  }
+
+  span {
+   animation: dot1 2s linear infinite;
+  }
+
+  span:nth-child(2) {
+   animation-name: dot2;
+  }
+
+  span:nth-child(3) {
+   animation-name: dot3;
+  }
+
+  @keyframes dot1 {
+   0% {
+    opacity: 0;
+   }
+
+   3% {
+    opacity: 0;
+   }
+
+   6% {
+    opacity: 1;
+   }
+
+   90% {
+    opacity: 1;
+   }
+
+   93% {
+    opacity: 0;
+   }
+
+   100% {
+    opacity: 0;
+   }
+  }
+
+  @keyframes dot2 {
+   0% {
+    opacity: 0;
+   }
+
+   35% {
+    opacity: 0;
+   }
+
+   38% {
+    opacity: 1;
+   }
+
+   90% {
+    opacity: 1;
+   }
+
+   93% {
+    opacity: 0;
+   }
+
+   100% {
+    opacity: 0;
+   }
+  }
+
+  @keyframes dot3 {
+   0% {
+    opacity: 0;
+   }
+
+   64% {
+    opacity: 0;
+   }
+
+   67% {
+    opacity: 1;
+   }
+
+   90% {
+    opacity: 1;
+   }
+
+   93% {
+    opacity: 0;
+   }
+
+   100% {
+    opacity: 0;
+   }
+  }
+ </style>
+</head>
+
+<body>
+ <!-- <p>Napis<span> . . .</span></p> -->
+ <!-- p{Napis}>span{ .}*3 -->
+ <p>
+  Napis<span> .</span><span> .</span><span> .</span>
+ </p>
+</body>
+
+</html>

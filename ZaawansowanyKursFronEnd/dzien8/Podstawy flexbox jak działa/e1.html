@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Examples 1 - Ustawienie wyświetlania jako flexbox</title>
+ <style>
+  section {
+   /* Flexbox */
+   /* Zarządzenie przestrzenią kontenera i ułożeniem w nim elementów elastycznych (dzieci)*/
+   /* display: inline-flex; */
+   display: flex;
+   /* Dzieci stają się elastyczne, domyslnie oobok siebie. Z samym elementem (rodzicem/kontenerem nic się nie dzieje). */
+   /* kontener ma szerokość 100% swojej wielkości */
+   /*kontener ma wysokość jaką zajmują jego dzieci */
+   /* wysokość elementu - na osi pionowej wypełnia rodzica */
+   /* height: 400px; */
+   /*  */
+   background-color: #ddd;
+   /* align-items: stretch; ---> prostopadłe do osi głównej*/ 
+   width: 80%;
+   margin: 100px auto;
+   font-family: sans-serif;
+   color: white;
+   font-size: 180px;
+  }
+
+
+  .f1 {
+   background-color: darkcyan;
+   width: 300px;
+  }
+
+  .f2 {
+   background-color: darkred;
+   /* width: 21000px; */
+  }
+
+  .f3 {
+   background-color: darkolivegreen
+  }
+ </style>
+</head>
+
+<body>
+ <section>
+  <div class="f1">1</div>
+  <div class="f2">2</div>
+  <div class="f3">3</div>
+ </section>
+</body>
+
+</html>

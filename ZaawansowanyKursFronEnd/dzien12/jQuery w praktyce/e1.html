@@ -1,0 +1,45 @@
+<!-- Dodawanie jQuery za pomocą CDN-a -->
+<!-- Miejsce dodawanie jQuery -->
+<!-- Document ready -->
+<!-- Pobranie dokumentów i ich długość -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Przykład 1</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    // $(document).ready(function () {
+    //   // console.log($('*'));
+    //   // console.log($('*').length);
+    // })
+    $(function () {
+
+      console.log($('div'));
+      console.log($('div').length);
+      console.log($('.item1').text())
+      const $p = $('p');
+      console.log($p.text())
+    })
+  </script>
+</head>
+
+<body>
+  <div class="item1">Div Item1</div>
+  <div class="item2">Div Item2</div>
+  <div>Div Item1</div>
+  <p>Lorem <span>SPAN</span>ipsum dolor, sit amet consectetur adipisicing elit. Inventore odio pariatur harum. Iste
+    laborum eos ullam
+    voluptatibus eius! Facilis, nemo similique. Veniam, officiis praesentium quas provident quia delectus voluptates?
+    Repellat?</p>
+  <p>Lorem, ipsum.</p>
+
+
+
+
+</body>
+
+</html>

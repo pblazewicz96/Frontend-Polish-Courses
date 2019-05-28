@@ -1,0 +1,30 @@
+Float - głównie do tworzenia układów stron 
+      - tworzenie menu
+      - praca z obrazkami do opływania grafik
+      - 
+      
+Problemy:
+    - Rodzic nie widzi wysokości dzieci (domyślnie 0 wysokości)
+    - Element za elementem ustawia się z boku - jeśli jest miejsce, czylo opływa go
+    
+Sposoby:
+    - overflow: hidden( lub auto ) na rodzicu
+    - nadać rozmiar (wysokość) rodzicowi ( ale wtedy mamy na sztywno ustaloną wielkość )
+    - dodatkowy element w html, który pełni rolę czyszczący zawiera właściwości (clear: both;)
+    - clear: both; bez dodatkowego elementy ale z wykorzytstaniem pseudoelementu after.
+    
+    .clear{
+        clear: both;
+    }
+     
+Pseudoelement - before i after - tworzymy w css bez uzycia znaczników w html
+
+div::before{
+content: "";
+} 
+
+.clearfix::after { ----< powszechnie przyjęta nazwa ale to tylko konwencja, mozna nazwac inaczej
+    content: "";
+    display: block;
+    clear: both;
+} 

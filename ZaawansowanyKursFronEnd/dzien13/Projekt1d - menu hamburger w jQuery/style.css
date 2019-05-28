@@ -1,0 +1,35 @@
+.burger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    line-height: 50px;
+    transition: .3s linear;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+aside {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: #000;
+    transition: .3s linear;
+}
+
+.fas {
+    display: none;
+    color: gray;
+}
+
+i.show {
+    display: block;
+}
+
+aside.show {
+    left: 0;
+}

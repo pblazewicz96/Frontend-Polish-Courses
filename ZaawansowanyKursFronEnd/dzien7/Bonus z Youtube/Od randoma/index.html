@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            /*   background-color: #000; */
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 50px;
+            color: #fff;
+            background-color: #000;
+            height: 52px;
+            text-align: left;
+            padding: 15px;
+        }
+
+        h1::after {
+            content: "";
+            animation: text 4s steps(21) infinite;
+        }
+
+        @keyframes text {
+            0% {
+                content: "_"
+            }
+
+            4% {
+                content: "S"
+            }
+
+            8% {
+                content: "Sa_"
+            }
+
+            12% {
+                content: "Sam"
+            }
+
+            16% {
+                content: "Samo_"
+            }
+
+            20% {
+                content: "Samop"
+            }
+
+            24% {
+                content: "Samopi_"
+            }
+
+            28% {
+                content: "Samopis"
+            }
+
+            32% {
+                content: "Samopisz_"
+            }
+
+            36% {
+                content: "Samopiszą"
+            }
+
+            40% {
+                content: "Samopisząc_"
+            }
+
+            44% {
+                content: "Samopiszący"
+            }
+
+            48% {
+                content: "Samopiszący s_"
+            }
+
+            52% {
+                content: "Samopiszący si"
+            }
+
+            56% {
+                content: "Samopiszący się_"
+            }
+
+            60% {
+                content: "Samopiszący się n"
+            }
+
+            64% {
+                content: "Samopiszący się na_"
+            }
+
+            68% {
+                content: "Samopiszący się nap"
+            }
+
+            72% {
+                content: "Samopiszący się napi_"
+            }
+
+            76% {
+                content: "Samopiszący się napis"
+            }
+
+            80% {
+                content: "Samopiszący się napis!_"
+            }
+
+            100% {
+                content: "Samopiszący się napis!"
+            }
+        }
+
+        h2 {
+            font-family: monospace;
+            font-size: 50px;
+            color: #f00;
+            background-color: #000;
+            height: 52px;
+            text-align: left;
+            padding: 15px;
+        }
+
+        h2::after {
+            content: "";
+            animation: dots 1.5s steps(3) infinite alternate;
+        }
+
+        @keyframes dots {
+            33% {
+                content: "."
+            }
+
+            66% {
+                content: ".."
+            }
+
+            100% {
+                content: "..."
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <h2>Loading<h/2> </body> </html>

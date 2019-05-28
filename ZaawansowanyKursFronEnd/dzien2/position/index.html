@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- position: static, fixed, absolute, relative -->
+    <style>
+        body {
+            height: 300vh;
+        }
+
+        div,
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            /* margin: 10px; */
+        }
+
+        .s1 {
+            position: fixed;
+            left: 200px;
+            top: 30%;
+            background-color: red;
+            z-index: 3;
+
+        }
+
+        .s2 {
+            position: absolute;
+            background-color: blue;
+            bottom: 30%;
+            left: 10%;
+            z-index: 2;
+
+        }
+
+        .s3 {
+            position: relative;
+            background-color: orange;
+            left: 40px;
+            top: 150px;
+            z-index: 1;
+        }
+
+        .s4 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 0;
+        }
+
+        section {
+            background-color: beige;
+            position: relative;
+            /* overflow: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ut libero cupiditate illum fugiat magni porro culpa
+            tenetur temporibus odio, optio quaerat nam quisquam consequuntur, cum assumenda voluptatum provident commodi.</p>
+    </header>
+    <section>
+        <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
+        <div class="s4"></div>
+        <div class="s5"></div>
+    </section>
+</body>
+
+</html>

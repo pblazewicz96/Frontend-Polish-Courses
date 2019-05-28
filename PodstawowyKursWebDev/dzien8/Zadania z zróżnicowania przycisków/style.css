@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: right;
+    font-size: 0;
+    /*likwiduje przerwy miedzy elementami*/
+
+}
+
+
+
+nav a {
+    display: inline-block;
+    font-size: 22px;
+
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: roboto, arial, sans-serif;
+    color: brown;
+    margin: 0 5px;
+    transition: 0.2s;
+}
+
+a.btn4 {
+    border: 2px solid brown;
+    margin-left: 100px;
+    margin-right: 50px;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid brown;
+}
+
+nav a.btn4:hover {
+    background: brown;
+    color: white;
+}
+
+header {
+    height: 300px;
+    background-color: cadetblue;
+}
+
+main {
+    min-height: 50vh;
+    background: burlywood;
+}
+
+footer {
+    min-height: 100px;
+    background: darkcyan;
+}

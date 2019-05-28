@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    height: 40px;
+    /*    overflow: hidden;   <- cos co wychodzi po za mnie tego juz nie ma*/
+
+}
+
+nav div.logo {
+    width: 20vw;
+    padding-right: 10vw;
+    height: 40px;
+    background-color: brown;
+    float: left;
+}
+
+nav ul {
+    width: 70vw;
+    height: 40px;
+    background: purple;
+    float: left;
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    width: 25%;
+}
+
+nav a {
+    display: block;
+    font-size: 18px;
+    font-family: arial;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    font-size: 26px;
+}

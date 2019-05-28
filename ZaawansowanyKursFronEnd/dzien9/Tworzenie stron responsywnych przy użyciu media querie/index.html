@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Media Queries</title>
+ <style>
+  body {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 0;
+   background-color: #ddd;
+   height: 100vh;
+
+   background-size: cover;
+   background-position: center;
+  }
+
+  div {
+   flex-basis: 25%;
+   background-color: rgba(255, 0, 0, 0.5);
+  }
+
+  @media (max-width: 640px) {
+   body {
+    background-image: url("img/bg640x426.jpg")
+   }
+  }
+
+  @media (min-width: 641px) and (max-width: 1280px) {
+   body {
+    background-image: url("img/bg1280x853.jpg")
+   }
+  }
+
+  @media (min-width: 1281px) {
+   body {
+    background-image: url("img/bg1920x1280.jpg");
+   }
+  }
+
+  @media (min-width: 641px) {
+   body {
+    background-color: rebeccapurple;
+   }
+  }
+
+  @media (min-width: 1025px) {
+   body {
+    background-color: goldenrod;
+   }
+  }
+
+  @media (orientation: portrait) {
+   body {
+    flex-direction: column;
+   }
+   div {
+    flex-basis: 50%;
+   }
+  }
+
+  @media (orientation: landscape) and (max-height: 200px) {
+   div {
+    background-color: white;
+   }
+  }
+ </style>
+</head>
+
+<body>
+ <div></div>
+
+</body>
+
+</html>

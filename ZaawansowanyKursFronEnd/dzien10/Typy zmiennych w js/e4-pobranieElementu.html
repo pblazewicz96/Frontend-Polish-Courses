@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Pobranie</title>
+</head>
+
+<body>
+ <p class="description red" id="text">Lorem ipsum, dolor sit amet consectetur!</p>
+ <p id="p2">Lorem 2</p>
+
+ <script>
+  /* DOM - Document Object Model */
+
+  // pobranie elementów
+  const p = document.querySelector(".description");
+  var paragraph = document.querySelectorAll('p');
+  var text = document.querySelector('p:nth-child(1)');
+
+  // var myPage = document.querySelector('body');
+  // document.body
+  // elementy dostępne - zobaczmy w konsoli
+  // błędy i wyświetlanie ich w konsoli
+  var text = document.querySelector('body>p.description.red');
+  // var text = document.querySylector('p:nth-child(1)');
+
+  var item2 = document.getElementById("p2");
+  // okno przeglądarki
+  // console.log(window);
+
+  // reprezentacja całej strony
+  // console.log(document);
+
+  //skrót do body
+  // console.log(document.body);
+  //skrót do html
+  // console.log(document.documentElement);
+  //skrót do kolekcji (zbiór)wszystkich obrazków na stronie
+  // console.log(document.images);
+  // console.log(document.querySelectorAll('img'))
+
+  // Czego używać najczęsciej?
+
+  document.querySelector("element");
+  document.querySelectorAll("elementy");
+ </script>
+
+</body>
+
+</html>

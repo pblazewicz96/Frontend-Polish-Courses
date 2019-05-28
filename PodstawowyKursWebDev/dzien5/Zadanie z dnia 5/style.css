@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.txt {
+    text-align: center;
+
+
+    line-height: 100vh;
+    /* Wyśrodkowanie góra dół!!!*/
+
+
+    text-transform: uppercase;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+
+    font-size: 5vh;
+    text-decoration: underline;

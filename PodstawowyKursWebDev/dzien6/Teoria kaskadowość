@@ -1,0 +1,20 @@
+Kaskadowość - zasady dla przeglądarki, którą regułę wybrać!
+
+CSS - kaskadowe arkusze stylów
+
+Klasyfikacja medalowa: (ważność selektorów)
+
+medal brązowy - selektor odwołujący sie do elementów (znaczników)
+medal srebrny - selektor odwołujący się do klas (.red{})
+medal złoty - selektor odwołujący się do identyfikatora (#header)
+
+!important - nadpisuje wszystkie inne reguły!  P { font-size:20px !important; }
+
+*{} - przypisuje wszystkim elementom lecz nie ma żadnego medalu
+
+Przy ustaleniu dziedziczenia ważność nie ma znaczenia!
+
+ 
+
+
+

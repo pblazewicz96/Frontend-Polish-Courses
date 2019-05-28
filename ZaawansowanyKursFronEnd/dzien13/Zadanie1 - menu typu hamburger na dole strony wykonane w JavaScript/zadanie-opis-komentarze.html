@@ -1,0 +1,100 @@
+<!-- 
+ZADANIE DLA CIEBIE!!!
+
+1. Strona ma mieć w pionie conajmniej 150% okna przeglądarki (pasek pionowy) 
+2. Menu ma być wysuwane z dołu
+3. Zamiast ikon hamburgera, pobieramy z font-awsome jedną strzałkę
+4. Strałka idzie do góry i obraca się o 180deg, zachowuje tą samą odległość od menu
+5. Menu jest częsciowo widoczne. Ma 300px, domyslnie 30px jest widoczne
+6. Obsługa zdarzenia click JS
+7. Użyj klasy "on" dla elementów, które są aktywne (dodawaj/odejmuj klasę on po kliknięciu)
+
+Strukturę początkową zróbmy razem :)
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <style>
+        body {
+            min-height: 150vh;
+        }
+
+        .arrow {
+            position: fixed;
+            right: 30px;
+            bottom: 60px;
+            font-size: 35px;
+            transition: .2s linear;
+        }
+
+        nav {
+            position: fixed;
+            left: 0;
+            right: 0;
+            height: 300px;
+            bottom: -270px;
+            background-color: black;
+            transition: .2s linear;
+        }
+
+        .arrow.on {
+            bottom: 310px;
+            transform: rotate(180deg);
+        }
+
+        nav.on {
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima ipsa labore magni asperiores praesentium
+                architecto
+                voluptatibus perspiciatis, nobis facere ipsam, quasi sunt voluptatum voluptatem omnis tempore dolores
+                impedit
+                quia velit. Velit sequi aperiam hic laudantium exercitationem facere. Doloremque, aperiam. Nam expedita
+                recusandae
+                quasi voluptatibus? Provident recusandae, nam praesentium nesciunt natus beatae sint at quas. Fuga ut
+                nihil
+                quae labore distinctio. Saepe inventore asperiores dicta est, laudantium non eaque aspernatur blanditiis
+                ad error quae quibusdam, consectetur doloremque rem quidem quam nulla dolore suscipit harum. Amet libero
+                illo non. Maxime, fugit. Autem? Velit possimus laudantium qui veniam omnis labore repudiandae? Unde
+                quasi
+                repellendus repudiandae eligendi fugit ducimus eveniet voluptate optio consequatur quod praesentium
+                omnis
+                quisquam sapiente hic, veniam dolorem velit obcaecati et! Dolores voluptas veniam repellendus impedit
+                soluta
+                voluptatem saepe sapiente, quisquam labore modi velit accusantium explicabo nulla fugit expedita
+                blanditiis
+                nesciunt optio rem. Voluptatum ad vitae nihil, doloribus sit blanditiis dolor.</p>
+        </article>
+
+    </div>
+    <div class="arrow">
+        <i class="fas fa-arrow-circle-up"></i>
+    </div>
+    <nav></nav>
+
+    <script>
+        const arrow = document.querySelector(".arrow");
+        const nav = document.querySelector("nav");
+
+        arrow.addEventListener("click", function () {
+            arrow.classList.toggle("on");
+            nav.classList.toggle("on");
+        })
+    </script>
+</body>
+
+</html>

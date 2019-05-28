@@ -1,0 +1,39 @@
+git init
+git status
+
+ls
+clear
+rm <plik> //usuwanie
+
+
+mkdir nazwaPliku 		//Tworzenie pliku
+
+git init
+git status // co sie dzieje
+git add // dodawanie
+
+git log // info o commitach
+git log --oneline
+
+
+
+git config --global user.name "nazwa"
+git config --global user.email "nazwaEmailu"
+
+git config --global core.editor
+
+notepad .gitconfig
+
+cat .gitconfig
+
+git config user.name
+
+git config --unset user.email       //usuwa maila
+
+git cat-file -p <kod folderu plus nazwa pliku w nim bedacego> //tu natomiast pliki z drzewa sa pokazywane :/
+git cat-file -t <kod folderu plus nazwa pliku w nim bedacego>  //komendy do sprawdzania plikow gita a tu akurat jakies drzewo?
+
+
+
+
+

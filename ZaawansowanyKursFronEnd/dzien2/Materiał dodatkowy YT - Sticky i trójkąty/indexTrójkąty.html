@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            position: relative;
+            height: 400px;
+            background-color: black;
+        }
+
+        div {
+            position: absolute;
+        }
+
+        .left {
+            top: 0;
+            left: 0;
+            border-left: 200px solid gray;
+            border-top: 200px solid;
+            border-bottom: 200px solid transparent;
+        }
+
+        .right {
+            top: 0;
+            right: 0;
+            border-right: 200px solid gray;
+            border-top: 300px solid;
+            border-bottom: 100px solid transparent;
+        }
+
+        .bottom {
+            bottom: 0;
+            left: 0;
+            border-bottom: 400px solid red;
+            border-left: 50vh solid transparent;
+            border-right: 50vw solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="triangle left"></div>
+        <div class="triangle right"></div>
+        <div class="bottom"></div>
+    </header>
+
+</body>
+
+</html>

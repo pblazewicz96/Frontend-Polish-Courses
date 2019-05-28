@@ -1,0 +1,21 @@
+ animation-name: nazwa;
+ animation-duration: 3.2s;   
+ animation-delay: 2s; - opoznienie wzgledem uruchomienia animacji
+ animation-direction: reverse;
+                    normal
+                    alternate
+                    alternate-reverse
+animation-iteration-count: 100; - ilosc wykonania animacji
+animation: superAnimacja 10s 2s alternate infinite;
+
+ animation-fill-moce: both; - animacja nie uruchamia sie od razu, lub animacja nie jest nieskonczona - czyli tak jakby w none nie bierze pod uwage tego co ma np w div a bierze od poczatku to co ma w keyframes
+ domyślna: 
+ : none; 
+
+ : forawrds; - przed animacja był stan jaki jest w div
+
+: backwards;
+
+animation-timing-function: linear;
+domyślna: ease;
+

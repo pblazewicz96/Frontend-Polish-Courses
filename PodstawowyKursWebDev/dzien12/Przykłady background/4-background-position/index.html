@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>4. background-image i background position</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .bg {
+            height: 50vh;
+            width: 50vw;
+            border: 14px solid red;
+            padding: 30px;
+            margin-top: 30px;
+
+            /*      background-image: url("img/kwiatek.jpg");*/
+            background-repeat: no-repeat;
+
+
+            /*      background-position: 20% 20%;*/
+            /*      Pierwsza wartość to oś x a druga y*/
+            /*      */
+            /*        right 30px bottom 120%;*/
+            /*        right 30% top 20%*/
+            /*      background-color: #388;*/
+            /*bgc nie okresla polozenia koloru a tylko obrazka */
+            /*     */
+            /*      dwa obrazki*/
+            /*      background-image: url("img/ptak_maly.jpg"), url("img/kwiatek.jpg");*/
+            /*      background-position: 0% 0%, 100% 100%;*/
+            /*      background-position: left 0 bottom 0, top 50% left 50%;*/
+            /*      background-image: url("img/ptak_maly.jpg");*/
+            background-image: url("img/kwiatek.jpg");
+            background-position: 50% 50%;
+            /*      background-repeat: repeat;*/
+        }
+    </style>
+</head>
+
+<body>
+    <h2>#4 Pozycja obrazka</h2>
+    <div class="bg"></div>
+</body>
+
+</html>

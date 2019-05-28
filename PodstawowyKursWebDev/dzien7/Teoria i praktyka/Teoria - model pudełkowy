@@ -1,0 +1,80 @@
+Elementy liniowe:
+
+Nie przechodzą do nowej linii(enter), nie mogą zawierać w sobie EB,  wysokość i szerokość EL zależą od rozmiaru zawartości, można zamienić EL na EB za pośrednictwem (display: block;) przeciwienstwo (display: inline;), również position > ze static na absolute, fixed lub relative, można użyć margin-left, margin-right, padding i border, jeżeli chodzi o width i height zmieniamy  właściwość display
+
+<a>
+<b>      pogrubienie
+<em>     
+<i>      kursywa
+<img>    obrazek
+<span> 
+<strong> mocne, pogrubienie
+
+
+Elementy blokowe:
+
+Zaczynają sie od nowej linii, !domyślna wielkość 100% rodzica! , jeden może zawierać wiele innych EB i EL
+
+<article>
+<aside>
+<form>
+<h1>
+<h6>
+<header>
+<li>
+<main>
+<nav>
+<ol>
+<p>
+<pre>
+<section>
+<table>
+<ul>
+
+span{tekst $}*10   --> wypisanie tekst z numerem on 1 do 10
+
+jeżeli jakiś obiekt wystaje poza pudełko piszemy funkcję:
+
+element{
+    overflow: hidden;
+}
+
+max-width: ; /min
+max-height: ; /min
+
+funkcja {margin: auto;} - działa tylko w poziomie!
+
+border: "width" "style" "color";
+border-style: solid;
+border-color: yellow;
+border-width: 10px;
+
+border-style: solid dashed solid dotted;
+itp...
+
+Kolejność najlepiej najważniejsza > mniej ważna? XD
+
+display
+width
+height
+padding
+margin
+border
+bacground-color
+color
+font-family
+font-size
+line-height
+font-weight
+
+
+float: left; - ustawienie elementów obok siebie
+
+
+box-sizing: content-box; - (podana wyzej)domyslna wlasciwosc dla content boxa/ width i height obejmuja tylko przestrzen content elementu
+box-sizing: border-box; - licz wysokosc i szerokosc przez border box/ w i h obejmuja content, padding i border elementu
+
+Display: block;
+Display: inline;
+Display: none; nie sa wyswietlane
+Display: inline-block; / Mamy kontrole nad wymiarami oraz nad wartosciami modelu pudelkowego - ale taki elemento nmie przechodzi do nowej linii / kontrola nad wielkoscia ale ukladaja sie obok siebie

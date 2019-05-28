@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            /* box-sizing: border-box; */
+        }
+
+        section {
+            width: 80%;
+            margin: 0 auto;
+            min-height: 50vh;
+        }
+
+        .s1 {
+            background-color: rgb(82, 43, 43);
+            height: 120vh;
+        }
+
+        .s2 {
+            background-color: rgb(24, 73, 44);
+            height: 80vh;
+        }
+
+        .s3 {
+            background-color: rgb(73, 58, 204);
+        }
+
+        .s4 {
+            background-color: rgb(58, 70, 31);
+            height: 140vh;
+        }
+
+        nav {
+            position: fixed;
+            top: 30%;
+            bottom: 30%;
+            left: 0;
+            width: 60px;
+            /* padding: 2px; */
+            /* background-color: #ccc; */
+        }
+
+        nav ul {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav li {
+            /* flex-shrink: 1; */
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: black;
+            transition: .5s;
+        }
+
+        .dot1 {
+            background-color: rgb(82, 43, 43);
+        }
+
+        .dot2 {
+            background-color: rgb(24, 73, 44);
+        }
+
+        .dot3 {
+            background-color: rgb(73, 58, 204);
+        }
+
+        .dot4 {
+            background-color: rgb(58, 70, 31);
+        }
+
+        .active {
+            box-shadow: 0 0 0 3px white, 0 0 0 6px red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://youtu.be/gw7AARP6ImU  -->
+    <section class="s1"></section>
+    <section class="s2"></section>
+    <section class="s3"></section>
+    <section class="s4"></section>
+    <nav>
+        <ul>
+            <li class="dot1"></li>
+            <li class="dot2"></li>
+            <li class="dot3"></li>
+            <li class="dot4"></li>
+        </ul>
+    </nav>
+
+    <script>
+        function changeDot() {
+            const scrollValue = $(window).scrollTop();
+            const heightS2 = $('.s2').offset().top;
+            const heightS3 = $('.s3').offset().top;
+            const heightS4 = $('.s4').offset().top;
+
+            // console.log(scrollValue.toFixed(), heightS2.toFixed(), heightS3.toFixed(), heightS4.toFixed())
+            // $('nav li').removeClass('active');
+
+            if (scrollValue < heightS2) {
+                $('nav li').not('.dot1').removeClass('active');
+                $('.dot1').addClass('active');
+            } else if (scrollValue < heightS3) {
+                $('nav li').not('.dot2').removeClass('active');
+                $('.dot2').addClass('active');
+            } else if (scrollValue < heightS4) {
+                $('nav li').not('.dot3').removeClass('active');
+                $('.dot3').addClass('active');
+            } else {
+                $('nav li').not('.dot4').removeClass('active');
+                $('.dot4').addClass('active');
+            }
+        }
+
+        $(window).on("scroll", changeDot)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Examples 2 - Podstawowe właściwości</title>
+ <style>
+  section {
+   display: flex;
+   height: 400px;
+   /* domyślne */
+   flex-direction: column;
+   align-items: stretch;
+   /* prostopadły do osi głównej */
+   background-color: #ddd;
+   width: 80%;
+   margin: 100px auto;
+   font-family: sans-serif;
+   color: white;
+   font-size: 80px;
+  }
+
+  .f1 {
+   background-color: darkcyan;
+   text-align: center;
+   /* padding: 120px; */
+   /* flex-basis: 5px; */
+   /* width: 100px; */
+   /* height: 1000px; */
+   /* row - szerokość, column - wysokość*/
+   /* flex-basis wielkość (od flex-direction zależy czy to szerokość czy wysokość) */
+  }
+
+  .f2 {
+   background-color: darkred;
+  }
+
+  .f3 {
+   background-color: darkolivegreen
+  }
+ </style>
+</head>
+
+<body>
+ <section>
+  <div class="f1">1</div>
+  <div class="f2">2</div>
+  <div class="f3">3</div>
+ </section>
+</body>
+
+</html>

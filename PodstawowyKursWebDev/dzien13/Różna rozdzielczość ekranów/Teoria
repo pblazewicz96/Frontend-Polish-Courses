@@ -1,0 +1,17 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+Media Queries - zapytania o media - najlepszy sposób na tworzenie stron responsywnych
+
+@media(orientation: landscape) and (min-width:600px)   -> sprawdza warunek w pierwszym (landscape-poziomy, portrait) i (min ilosc px)
+
+@media(max-width: 460px){
+
+}
+
+
+/Wejdź w blok kodu tylko jeśli spełnione są warunki reguły @media.
+/Sprawdź "live". Czyli przy każdej zmianie kod jest analizowany.
+
+Media Queries wstawiamy je w pliku na dole strony / pod dana sekcją!
+

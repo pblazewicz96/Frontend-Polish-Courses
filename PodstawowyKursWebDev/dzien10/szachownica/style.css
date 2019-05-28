@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.board {
+
+    border: 3px solid black;
+    width: 400px;
+    margin: 100px auto 0;
+    /*    overflow: hidden;*/
+    font-size: 0;
+}
+
+
+
+.board div {
+
+    display: inline-block;
+    /*    float: left;*/
+    width: 80px;
+    height: 80px;
+
+}
+
+.board div:nth-child(even) {
+    background-color: black;
+
+}
+
+h1 {
+    font-family: arial;
+    text-align: center;
+}

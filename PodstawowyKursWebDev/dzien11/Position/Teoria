@@ -1,0 +1,48 @@
+Position : static; - domyślny układ, układają się pod sobą
+          V  Pełna kontrola nad ustawieniem elementów:
+         : absolute; - 
+         : relative; - 
+         : fixed; - 
+         
+         
+         
+Position: fixed;
+
+Pełna kontrola nad tymi elementami, marginesy paddingi - elementy staja się atuomatycznie blokowe.
+
+- wyrzucamy - dany element nie jest już w układzie dokumentu, nie jest widoczny dla innych elementów, może je jedynie nakryć
+- przypinamy - element do okna przegladarki i pozycjonujemy wzgledem okna przegladarki. Strona się przwija element jest nieruchomy
+- domyslnie tyle miejsca ile potrzebuje (width i hight określa wysokość i szerokość) (top bottom) > mogą się nadpisywać owe elementy
+ 
+ top bottom right left - Jest rysowany tworzony taki element
+
+z-index: 0; kolejność elementu który możemy ustawić ręcznie, im większa tym wyżej element będzie umieszczony
+
+domyślna z-index: auto;
+
+-----------------------------------------
+
+Position: absolute;
+
+Wyrzuca element z układu dokumentu. Nie jest widoczny dla innych elementów - nie wpływa na nie a jedynie może je zakryć.
+Jest swobodny i nie przykleja się do okna przeglądarki. Strona się przewija wraz z elementem.
+
+Świetnie się pozycjonuje względem drugiego elementu(nie tylko przeglądarki)
+V
+position: relative; - dajemy to dla rodzica wobec którego będzimy pozycjonować nasze dziecko.
+
+div{
+    position: absolute;
+    top: 0;   /* względem wysykości okna przeglądarki Domyślnie */
+    left: 0;    /* względem szerokości onka przeglądarki Domyślnie */
+}
+
+Procenty (w height i width) %%% domyślnie dotyczą wtedy okna przeglądarki jeśli nie jest pozycjonowany względem innego elementu
+
+top bottom right left - Jest rysowany tworzony taki element - domyślnie określany na auto
+
+------------------------------------------
+
+Position: relative;
+
+

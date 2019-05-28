@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>5. background-image i background-size</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .bg {
+      height: 50vh;
+      width: 50vw;
+      border: 14px solid red;
+      padding: 30px;
+      margin-top: 30px;
+
+      background-repeat: no-repeat;
+      background-image: url("img/dance.jpg");
+      background-size: cover;
+      background-position: center;
+      /*      background-size: 100% auto;*/
+      /*      oryginalna wielkość*/
+      /*      */
+      /*      background-size: 100% 70%;*/
+      /* Pierwsza wartość to szerokosć druga to wysokość, przy czym procenty określają stosunek do rodzica     */
+      /*      background-size: 100% 100%;*/
+      /*auto pozwala zachować proporcje*/
+      /*
+ background-image: url("img/kwiatek.jpg"); background-size: contain;
+*/
+      /*contain - całe grafika musi się znaleźć w elemencie i zająć jak największy obszar, grafika nie może być rozciągnięta */
+      /*cover - całe tło musi być zajęte, a grafiki ma być ucięte jak najmniej (szerokosć, albo wysokość, decyzje podejmuje przeglądarka) - grafika nie może być rozciągnięta*/
+    }
+
+  </style>
+</head>
+
+<body>
+  <h2>#5 Wielkość obrazka</h2>
+  <div class="bg"></div>
+</body>
+
+</html>

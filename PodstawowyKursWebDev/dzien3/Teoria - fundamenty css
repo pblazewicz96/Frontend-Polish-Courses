@@ -1,0 +1,24 @@
+Kombinatory:
+
+spacja - potomek                 h1 p {}   wez p ktore sa potomkami h1
++ - pierwszy młodszy brat        p + ul {}  wez ul ktore jest bratem p
+~ - każdy młodszy brat           div ~ div {} wez div ktore jest nie pierwszym ale kojenym bratem diva
+> - dziecko                      li > li {} wez li ktore jest dzieckiem innego li
+
+Selektor uniwersalny:
+
+*{color:red} - każdy element na stronie
+
+
+div * p{
+color: yellow; ----------    p ktore jest potomkiem dowolnego elementu ktore jest potomkiem diva
+}
+
+em - relacja dziecko do rodzica
+rem - relacja do elementu głównego (HTML)
+
+% - % rodzica
+
+vh - 100% wysokości okna przeglądarki
+
+vw - 100% szerokości okna przeglądarki

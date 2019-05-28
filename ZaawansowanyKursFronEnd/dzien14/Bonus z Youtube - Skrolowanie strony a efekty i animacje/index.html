@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 100vh;
+            background-image: url("http://websamuraj.pl/examples/yt/scrollHeader/bg.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        main {
+            min-height: 150vh;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        const $doc = $(document);
+        const $header = $('header');
+        const $main = $('main');
+
+        $doc.on("scroll", function () {
+            const scrollPos = $doc.scrollTop();
+
+            //gdzie (ile px) jest dany element od poczatku strony VVV
+            const sectionOffset = $main.offset().top;
+
+            //jaka jest wysokość elementu
+            const headerHeight = $header.outerHeight();
+
+            //jesli scroll jest mniejszy niz odleglosc do tego lementu tylko wtedy ma sie wykonac zmiana
+            if (scrollPos < sectionOffset) {
+                $header.css({
+                    //przeźroczystość
+                    // 'opacity': 1 - scrollPos / headerHeight,
+
+                    // czarno białe
+                    'filter': 'grayscale(' + scrollPos / headerHeight + ')'
+
+                })
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Dodawania JS - jak i miejsce</title>
+</head>
+
+<body>
+
+ <p>Zmienne</p>
+ <script>
+  /* ZMIENNE */
+  var userName = "bartek";
+  var userAge = 18;
+  var drivingLicense = true;
+
+  // var - deklaracja zmiennej. Stary sposób, ale do stron idealny, bo czytany też przez stare przeglądarki (nie trzeba kompilować do starej wersji)
+
+  /* NAZWA ZMIENNE */
+  // nazwa zmienne - pod taką nazwą może być pobierana zawartość zmiennej w innej instrukcji
+  console.log(userName, userAge, drivingLicense)
+  //Nazwa zmiennej powinna odpowiadać jest zawartości
+  //nazwa zmiennej powinna wykorzystywać notacje wielbłądzią
+
+  /* LET i CONST */
+  // let i const nowe wersje deklarowania zmiennych
+
+  let myAge = 28;
+  let profession = 'programmer';
+  const yearOfBirth = '1990';
+
+  //zadeklarujmy i przypiszmy wartości var, let i const.
+  // zobaczmy różne błędy
+  // let myAge = 29;
+  // var a = 1;
+  // var a = 2;
+  myAge = 29;
+  let za5lat = myAge + 5;
+
+  // yearOfBirth = '1991';
+  // const adress;
+  // let ccc;
+  // var ddd;
+  var buzz = "1 b";
+ </script>
+
+</body>
+
+</html>

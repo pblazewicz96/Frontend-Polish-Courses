@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .first::before {
+            content: "";
+        }
+
+        .second::after {
+            content: "";
+            display: block;
+            color: red;
+        }
+
+        div::before {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: black;
+        }
+
+        div::after {
+            content: "";
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="first">
+
+        <div class="second">tekst</div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 90%;
+    max-width: 1024px;
+    background-color: black;
+    margin: 30px auto;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style: none;
+    /*    nie uzwaj elementow listy*/
+    font-size: 0;
+
+}
+
+nav ul li {
+    display: inline-block;
+    width: 20%;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: arial;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+    text-align: center;
+
+
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    height: 300px;
+    background-color: #ddd
+}

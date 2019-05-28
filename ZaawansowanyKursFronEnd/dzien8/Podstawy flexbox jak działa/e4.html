@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Examples 4 cd</title>
+ <style>
+  section {
+   display: flex;
+   /* domyślne */
+   /* flex-direction: row; */
+   /* align-items: stretch; */
+   /* justify-content: flex-start; */
+   /* align-content: stretch; */
+   flex-wrap: wrap;
+   background-color: #ddd;
+   width: 500px;
+   margin: 100px auto;
+   font-family: sans-serif;
+   color: white;
+   font-size: 80px;
+   height: 400px;
+
+  }
+
+  div {
+   flex-basis: 50%;
+   /* flex-basis: 100px; */
+   /* flex-shrink: 1;
+   flex-grow: 1; */
+  }
+
+  .f1 {
+   background-color: darkcyan;
+  }
+
+  .f2 {
+   background-color: darkred;
+  }
+
+  .f3 {
+   background-color: darkolivegreen
+  }
+ </style>
+</head>
+
+<body>
+ <section>
+  <div class="f1">1</div>
+  <div class="f2">2</div>
+  <div class="f3">3</div>
+ </section>
+</body>
+
+</html>

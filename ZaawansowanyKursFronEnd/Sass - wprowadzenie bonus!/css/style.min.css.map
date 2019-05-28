@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,AAAC,CACA,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,4BAA4B,CAAG,AAChD,AAAA,CAAC,AAAC,CACE,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,IAAI,CAAG",
+    "sources": [
+        "../../ZaawansowanyKursFronEnd/Sass - wprowadzenie bonus!/sass/style.sass"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}

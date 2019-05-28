@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>body {
+            display: flex;
+           }
+         
+           div {
+            flex-grow: 1;
+            height: 50px;
+            cursor: pointer;
+            margin: 20px;
+            border: 2px solid black;
+            background-color: #fff;
+         
+           }
+         
+           .orange {
+            background-color: orange;
+           }
+         
+           .green {
+            background-color: green;
+           }
+         
+           .blue {
+            background-color: blue;
+           }
+         
+           .yellow {
+            background-color: yellow;
+           }
+         
+           .red {
+            background-color: red;
+           }</style>
+</head>
+<body>
+        <div class="orange"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <script>
+            
+            const orange = document.querySelector('.orange');
+            const green = document.querySelector('.green');
+            const blue = document.querySelector('.blue');
+            const yellow = document.querySelector('.yellow');
+            const red = document.querySelector('.red');
+
+            function changeBgc(){
+                body.style.backGroun
+            }
+
+            // orange.addEventListener('click', changeBgc);
+            // green.addEventListener('click', changeBgc);
+            // blue.addEventListener('click', changeBgc);
+            // yellow.addEventListener('click', changeBgc);
+            // red.addEventListener('click', changeBgc);
+
+            orange.addEventListener('click', function () {
+            document.body.className = "orange";
+            })
+            green.addEventListener('click', function () {
+            document.body.className = "green";
+            })
+            blue.addEventListener('click', function () {
+            document.body.className = "blue";
+            })
+            yellow.addEventListener('click', function () {
+            document.body.className = "yellow";
+            })
+            red.addEventListener('click', function () {
+            document.body.className = "red";
+            })
+
+
+            // Wersja zoptymalizowana: jedno pobieranie (nodeList), jedno ustawienie nasłuchiwania i uniwersalna funkcja.
+
+const divs = document.querySelectorAll('div');
+
+divs.forEach(function (div) {
+ div.addEventListener('click', changeColor)
+})
+
+function changeColor() {
+ document.body.className = this.className;
+}
+
+//Wersja z jedną uniwersalną funkcją
+
+// const orangeBtn = document.querySelector('.orange');
+// const greenBtn = document.querySelector('.green');
+// const blueBtn = document.querySelector('.blue');
+// const yellowBtn = document.querySelector('.yellow');
+// const redBtn = document.querySelector('.red');
+
+// orangeBtn.addEventListener('click', changeColor);
+// greenBtn.addEventListener('click', changeColor);
+// blueBtn.addEventListener('click', changeColor);
+// yellowBtn.addEventListener('click', changeColor);
+// redBtn.addEventListener('click', changeColor);
+
+//Wersja pierwotna z funkcją anonimową, osobną dla każdego elementu
+// orangeBtn.addEventListener('click', function () {
+//  document.body.className = "orange";
+// })
+// greenBtn.addEventListener('click', function () {
+//  document.body.className = "green";
+// })
+
+//itd.
+        </script>
+</body>
+</html>

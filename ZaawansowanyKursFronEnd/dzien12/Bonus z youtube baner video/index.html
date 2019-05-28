@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            height: 50vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media(max-width:800px) {
+            header {
+                height: 30vh;
+            }
+        }
+
+        video.header {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        header h1 {
+            position: absolute;
+            z-index: 1;
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-family: arial;
+            text-transform: uppercase;
+            font-size: 36px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px 0;
+            animation: text 12s infinite;
+            opacity: 0;
+        }
+
+
+        header h1:nth-of-type(2) {
+            animation-delay: 4s;
+        }
+
+        header h1:nth-of-type(3) {
+            animation-delay: 8s;
+        }
+
+
+        @keyframes text {
+            0% {
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 0;
+            }
+
+            8% {
+                opacity: 1
+            }
+
+            25% {
+                opacity: 1
+            }
+
+            28% {
+                opacity: 0
+            }
+
+            33.33% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cheap</h1>
+        <h1>Fast</h1>
+        <h1>feebly :)</h1>
+        <video class="header" src="http://websamuraj.pl/examples/yt/wideo/video.mp4" autoplay loop playsinline muted>
+            <!-- Gdy mamy więcej niż jeden format danego wideo -->
+            <!-- <source src="video.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
+            <source src="video.ogg" type="video/ogg"> -->
+
+        </video>
+
+        <!-- Za ustawienie interfejsu na wideo odpowiada atrybut consols użyty w znaczniku <video> -->
+        <!-- Za ustawienie grafiki początkowej na wideo odpowiada atrybut poster="ścieżka" użyty w znaczniku <video> -->
+    </header>
+</body>
+
+</html>

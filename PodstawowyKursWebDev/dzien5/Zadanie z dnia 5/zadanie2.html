@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            /*
+            margin: 0;
+            text-align: center;
+            margin: 0 500px 0 500px;
+            font-size: 1.5rem;
+*/
+            width: 500px;
+            margin: 0 auto;
+            font-size: 1.5em;
+        }
+
+        p.italic {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: yellow;
+            background: black;
+            text-align: justify;
+        }
+
+        p.italic:hover {
+            color: green;
+            background: #c0c0c0;
+            text-decoration: underline;
+            line-height: 200%;
+        }
+
+        p.italic+p {
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi error natus enim necessitatibus cumque. Veritatis, libero autem hic dolores soluta expedita maiores, ad debitis minus placeat eveniet maxime officiis fugit!</p>
+    <p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consectetur consequuntur eius magnam magni quod repellat voluptate eos cumque placeat unde, sequi facere sed dolores velit, voluptates officia inventore quisquam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolores totam quasi, ducimus odit maiores corporis. Odit dicta expedita velit optio omnis voluptas vel suscipit fugit eos quia, laborum. Suscipit.</p>
+</body>
+</html>

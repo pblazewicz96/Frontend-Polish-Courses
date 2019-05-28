@@ -1,0 +1,121 @@
+Bezszeryfowe - sans-serif 
+
+Arial, Verdana, Taahoma - Systemowe
+Open Sans, Roboto
+
+em dziedziczy po rodzicu
+rem dziedziczy po elemencie głównym (html)
+
+Wielkość fonta jest dziedziczona
+Kolor jest dziedziczony - nie tylko do fonta sluzy ale rónież do bordera
+
+
+font-style: italic; - KURSYWA
+font-style: normal; - normalny - wartosc inicjująca element
+
+font-weight: bold; - pogrubienie może też być normal, bold, bolder, lighter
+
+letter-spacing: 2px; - przerwy między literami
+
+word-spacing: 1em; 
+
+text-decoration: underline; - podkreślenie
+text-decoration: line-through; - przekreślenie
+
+dopisanie do jakiejs zmiennej w stylu :hover - zmienia wyglad po najechaniu na daną sekcję na stronie
+
+
+
+text-indent: 10px; - wcięcie tekstu (moze byc z minusem czyli w drugą stronę)
+
+
+
+
+Położenie tekstu V
+
+text-align: left;   tekst może być: do prawej, do lewej
+text-align: center;   tekst może być wecentrowany
+text-align: justify;   tekst może być wyjustowany
+
+
+
+Transformacja tekstu V
+
+text-transform: uppercase;    zmienia litery na WIELKIE w całym tekście        
+text-transform: capitalize;   pierwsza litera w każdym słowie z WIELKIEJ
+text-transform: lowercase;    zmienia litery na MAŁE w całym tekście  
+
+
+
+Wysokość wiersza V  LINE-HEIGHT
+
+Ex:
+
+p{
+    font-size: 20px;
+    line-height: 34px;  --> moze być w % - czyli 120% wielkości fonta (em, bez niczego jako %)
+    text-align: center;
+}
+
+
+Cien tekstu - VERTICAL-ALIGN V
+
+vertical-align: baseline;
+vertical-align: top;
+vertical-align: 0%;
+
+
+
+Zapis skrócony font
+
+font: font-style font-weight font-variant font-size;
+V
+font: italic bold small-caps 20px;
+
+Najczęsciej używane: 
+
+font: 20px/140% arial, sans-serif;  - 24px calego wiersza -> 4px linii nad i pod
+
+
+
+TEKST W PUDEŁKU V
+
+padding - margines wewnetrzny wchodzacy w sklad pudełka
+
+element{
+    padding: 40px;
+    border: 10px solid orange;
+    margin: 30px;
+    font-size: 50px;
+}
+
+
+Ciekawostki:
+
+hyphens: auto; ---> dzieli słowa w linii przez myślnik jeżeli się nie mieszczą
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
