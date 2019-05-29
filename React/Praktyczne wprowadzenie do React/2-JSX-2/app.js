@@ -1,25 +1,37 @@
-const header = <h1 className="title">Witaj na stronie!</h1>
+const header = <h1 className="title"> Witaj na stronce!</h1>;
 
 const classBig = "big";
 
-const handleClick = () => alert("klik!")
+const handleClick = () => alert("klik klik");
 const main = (
   <div>
-    <h1 person="osoby" onClick={handleClick} className="red">Pierwszy artykuł</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae iste similique itaque a sequi provident corporis fuga, neque libero dolore quidem iure aliquam mollitia, velit pariatur quos sint iusto culpa?</p>
+    <h1 onClick={handleClick} className="red">
+      Pierwszy artykuł na jakże świetnej stronce
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A beatae vero
+      corrupti obcaecati distinctio sapiente minus molestiae illum consequuntur
+      odio, voluptates totam excepturi, dolore dolorum? Praesentium cum
+      asperiores eum natus debitis ab nesciunt officia veritatis at, quaerat
+      dolores blanditiis impedit a ut minima! Aliquam totam ipsa, in tenetur
+      corrupti voluptatem optio ullam odio? Deserunt molestias ducimus fugiat
+      alias debitis. Modi placeat fugiat minima vitae. Ab corrupti suscipit
+      autem quam asperiores nesciunt vero sed, earum repudiandae possimus iure
+      praesentium magni modi aperiam optio est perspiciatis dolorem qui atque
+      facere molestias nisi ipsum accusamus? At distinctio, est commodi tempora
+      consequuntur necessitatibus hic?
+    </p>
   </div>
-)
+);
 
-const text = "stopkaaa";
-const largeTxt = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore temporibus quasi repudiandae, quia beatae, quas et nulla, soluta reprehenderit consequuntur voluptatum a delectus fuga? Minus, unde? Iusto fugit non quisquam."
+const footerText = "Taka sobie stopka";
+
 const footer = (
-  <footer>
-    {largeTxt}
-    <p className={classBig}>{text}</p>
-
+  <footer className={classBig}>
+    <p>{footerText}</p>
   </footer>
-)
+);
 
-const app = [header, main, footer]
+const app = [header, main, footer];
 
-ReactDOM.render(app, document.getElementById('root'))
+ReactDOM.render(app, document.getElementById("root"));
