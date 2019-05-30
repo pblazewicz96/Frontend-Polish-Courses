@@ -13,13 +13,13 @@ class App extends React.Component {
 
   state = {
     text: ""
-  }
+  };
 
   handleClick = () => {
     // this.state.text += "a";
     // console.log(this.state.text);
     // console.log(this);
-    const letter = "a"
+    const letter = "a";
 
     // this.setState({
     //   text: this.state.text + letter
@@ -27,17 +27,16 @@ class App extends React.Component {
 
     this.setState(() => ({
       text: this.state.text + letter
-    })
-    )
-  }
+    }));
+  };
   render() {
     return (
       <React.Fragment>
         <button onClick={this.handleClick}>Dodaj "A"</button>
         <h1>{this.state.text}</h1>
       </React.Fragment>
-    )
+    );
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<App />, document.getElementById("root"));

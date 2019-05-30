@@ -1,10 +1,9 @@
 class ShoppingList extends React.Component {
-
   state = {
-    items1: 'ogórki',
-    items2: 'sok',
-    items3: 'coś do picia'
-  }
+    items1: "ogórki",
+    items2: "sok",
+    items3: "coś do picia"
+  };
 
   render() {
     return (
@@ -16,7 +15,7 @@ class ShoppingList extends React.Component {
           <ItemList name={this.state.items3} />
         </ul>
       </>
-    )
+    );
   }
 }
 
@@ -29,13 +28,34 @@ class ShoppingList extends React.Component {
 class ItemList extends React.Component {
   render() {
     return (
-      <li>{this.props.name} - {this.props.example}</li>
-    )
+      <li>
+        {this.props.name} - {this.props.example}
+      </li>
+    );
   }
 }
 
+ReactDOM.render(<ShoppingList />, document.getElementById("root"));
 
+// class ShoppingList extends React.Components {
+//   state = {
+//     items1: "ogórki",
+//     items2: "sok",
+//     items3: "picie"
+//   };
 
+//   render() {
+//     return (
+//       <>
+//         <h1>Lista zakupów</h1>
+//         <ul>
+//           <li>{this.state.items1}</li>
+//           <li>{this.state.items2}</li>
+//           <li>{this.state.items3}</li>
+//         </ul>
+//       </>
+//     );
+//   }
+// }
 
-
-ReactDOM.render(<ShoppingList />, document.getElementById('root'))
+// ReactDOM.render(<ShoppingList />, document.getElementById("root"));
