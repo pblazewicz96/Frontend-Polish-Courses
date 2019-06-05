@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #clock {
+      font-family: arial;
+      font-size: 40px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="clock"></div>
+
+
+  <script>
+    function counting() {
+      let today = new Date();
+
+      let days = today.getDate();
+      let months = today.getMonth() + 1; // bo miechy od zera
+      let years = today.getFullYear();
+
+      let hours = today.getHours();
+      let minutes = today.getMinutes();
+      let seconds = today.getSeconds();
+
+      document.getElementById('clock').innerHTML = (
+        `${days <10 ? '0' + days : days} - ${months <10 ? '0' + months : months} - ${years} | ${hours <10 ? '0' + hours : hours} : ${minutes <10 ? '0' + minutes : minutes} : ${seconds <10 ? '0' + seconds : seconds}`
+      );
+
+      setTimeout("counting()", 1000);
+
+    }
+
+    counting();
+  </script>
+</body>
+
+</html>
