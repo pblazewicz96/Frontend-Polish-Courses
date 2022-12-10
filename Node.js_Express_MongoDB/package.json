@@ -19,6 +19,6 @@
   "homepage": "https://github.com/pblazewicz96/Frontend-Polish-Courses#readme",
   "dependencies": {
     "colors": "^1.3.3",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
